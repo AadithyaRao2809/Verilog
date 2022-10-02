@@ -1,0 +1,87 @@
+$date
+	Thu Sep 29 13:38:49 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module gatesTestBench $end
+$var wire 1 ! xorGate $end
+$var wire 1 " xnorGate $end
+$var wire 1 # orGate $end
+$var wire 1 $ notGate $end
+$var wire 1 % norGate $end
+$var wire 1 & nandGate $end
+$var wire 1 ' andGate $end
+$var reg 1 ( A $end
+$var reg 1 ) B $end
+$scope module g1 $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 ' y $end
+$upscope $end
+$scope module g2 $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 # y $end
+$upscope $end
+$scope module g3 $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 % y $end
+$upscope $end
+$scope module g4 $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 & y $end
+$upscope $end
+$scope module g5 $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 ! y $end
+$upscope $end
+$scope module g6 $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 " y $end
+$upscope $end
+$scope module g7 $end
+$var wire 1 ( a $end
+$var wire 1 $ y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0)
+0(
+0'
+1&
+1%
+1$
+0#
+1"
+0!
+$end
+#10
+0%
+0"
+1#
+1!
+1)
+#20
+0$
+0)
+1(
+#30
+0&
+1"
+1'
+0!
+1)
+#40

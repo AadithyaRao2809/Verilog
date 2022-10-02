@@ -1,0 +1,126 @@
+**** module/scope: Nand
+     Flip-Flops   : 0
+     Logic Gates  : 2
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 2
+**** module/scope: Nor
+     Flip-Flops   : 0
+     Logic Gates  : 2
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 2
+**** module/scope: Not
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: Xnor
+     Flip-Flops   : 0
+     Logic Gates  : 2
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 2
+**** module/scope: fourBitAdder
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.f1
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.f1.a1
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.f1.a1.carry1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f1.a1.sum1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f1.a2
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.f1.a2.carry1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f1.a2.sum1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f1.suma1a2
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f2
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.f2.a1
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.f2.a1.carry1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f2.a1.sum1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f2.a2
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.f2.a2.carry1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f2.a2.sum1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f2.suma1a2
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f3
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.f3.a1
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.f3.a1.carry1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f3.a1.sum1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f3.a2
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.f3.a2.carry1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f3.a2.sum1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.f3.suma1a2
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.h0
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.h0.a1
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.h0.a1.carry1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.h0.a1.sum1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.h0.a2
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: fourBitAdder.h0.a2.carry1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.h0.a2.sum1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: fourBitAdder.h0.suma1a2
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 20

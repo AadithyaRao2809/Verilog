@@ -1,0 +1,129 @@
+$date
+	Thu Sep 29 14:17:08 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_TB $end
+$var wire 1 ! res $end
+$var wire 1 " cout $end
+$var reg 1 # cin $end
+$var reg 1 $ i0 $end
+$var reg 1 % i1 $end
+$var reg 2 & sel [1:0] $end
+$scope module a $end
+$var wire 1 # cIn $end
+$var wire 1 $ i0 $end
+$var wire 1 % i1 $end
+$var wire 2 ' s [1:0] $end
+$var wire 1 ! res $end
+$var wire 1 ( muxOut $end
+$var wire 1 ) muxOr $end
+$var wire 1 * muxAnd $end
+$var wire 1 " cOut $end
+$var wire 1 + adderOut $end
+$var wire 1 , adderIn $end
+$scope module A1 $end
+$var wire 1 $ a $end
+$var wire 1 # cIn $end
+$var wire 1 - sum1 $end
+$var wire 1 + sum $end
+$var wire 1 . carry2 $end
+$var wire 1 / carry1 $end
+$var wire 1 " carry $end
+$var wire 1 , b $end
+$scope module a1 $end
+$var wire 1 $ a $end
+$var wire 1 - s $end
+$var wire 1 / c $end
+$var wire 1 , b $end
+$scope module carry1 $end
+$var wire 1 $ a $end
+$var wire 1 / y $end
+$var wire 1 , b $end
+$upscope $end
+$scope module sum1 $end
+$var wire 1 $ a $end
+$var wire 1 - y $end
+$var wire 1 , b $end
+$upscope $end
+$upscope $end
+$scope module a2 $end
+$var wire 1 - a $end
+$var wire 1 # b $end
+$var wire 1 + s $end
+$var wire 1 . c $end
+$scope module carry1 $end
+$var wire 1 - a $end
+$var wire 1 # b $end
+$var wire 1 . y $end
+$upscope $end
+$scope module sum1 $end
+$var wire 1 - a $end
+$var wire 1 # b $end
+$var wire 1 + y $end
+$upscope $end
+$upscope $end
+$scope module suma1a2 $end
+$var wire 1 / a $end
+$var wire 1 . b $end
+$var wire 1 " y $end
+$upscope $end
+$upscope $end
+$scope module a1 $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 * y $end
+$upscope $end
+$scope module m1 $end
+$var wire 2 0 a [1:0] $end
+$var wire 1 ( out $end
+$var wire 1 1 sel $end
+$upscope $end
+$scope module m2 $end
+$var wire 2 2 a [1:0] $end
+$var wire 1 ! out $end
+$var wire 1 3 sel $end
+$upscope $end
+$scope module o1 $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 ) y $end
+$upscope $end
+$scope module x1 $end
+$var wire 1 % a $end
+$var wire 1 4 b $end
+$var wire 1 , y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+04
+03
+b0 2
+01
+b10 0
+0/
+1.
+1-
+0,
+0+
+0*
+1)
+0(
+b0 '
+b0 &
+0%
+1$
+1#
+1"
+0!
+$end
