@@ -1,5 +1,5 @@
 $date
-	Thu Sep 29 14:07:40 2022
+	Thu Dec 01 14:07:05 2022
 $end
 $version
 	Icarus Verilog
@@ -209,12 +209,74 @@ $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
+$scope module adderTest $end
+$var wire 1 D sum $end
+$var wire 1 E cout $end
+$var reg 1 F A $end
+$var reg 1 G B $end
+$var reg 1 H cin $end
+$scope module a1 $end
+$var wire 1 F a $end
+$var wire 1 G b $end
+$var wire 1 H cIn $end
+$var wire 1 I sum1 $end
+$var wire 1 D sum $end
+$var wire 1 J carry2 $end
+$var wire 1 K carry1 $end
+$var wire 1 E carry $end
+$scope module a1 $end
+$var wire 1 F a $end
+$var wire 1 G b $end
+$var wire 1 I s $end
+$var wire 1 K c $end
+$scope module carry1 $end
+$var wire 1 F a $end
+$var wire 1 G b $end
+$var wire 1 K y $end
+$upscope $end
+$scope module sum1 $end
+$var wire 1 F a $end
+$var wire 1 G b $end
+$var wire 1 I y $end
+$upscope $end
+$upscope $end
+$scope module a2 $end
+$var wire 1 I a $end
+$var wire 1 H b $end
+$var wire 1 D s $end
+$var wire 1 J c $end
+$scope module carry1 $end
+$var wire 1 I a $end
+$var wire 1 H b $end
+$var wire 1 J y $end
+$upscope $end
+$scope module sum1 $end
+$var wire 1 I a $end
+$var wire 1 H b $end
+$var wire 1 D y $end
+$upscope $end
+$upscope $end
+$scope module suma1a2 $end
+$var wire 1 K a $end
+$var wire 1 J b $end
+$var wire 1 E y $end
+$upscope $end
+$upscope $end
+$upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
 $end
 #0
 $dumpvars
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
 1C
 0B
 0A
@@ -265,11 +327,14 @@ $end
 b1111 !
 b1111 (
 1,
+1D
 0C
 1@
 1+
+1I
 0>
 1)
+1G
 b110 #
 b110 &
 #20
@@ -291,8 +356,38 @@ b0 (
 09
 1>
 18
+0G
+1F
 b1 $
 b1 '
 b1111 #
 b1111 &
 #30
+1E
+0D
+1K
+0I
+1G
+#40
+0E
+1D
+0K
+1H
+0G
+0F
+#50
+1E
+1J
+0D
+1I
+1G
+#60
+0G
+1F
+#70
+0J
+1D
+1K
+0I
+1G
+#80

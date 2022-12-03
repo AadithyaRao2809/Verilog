@@ -1,66 +1,32 @@
+`timescale 1 ns / 100 ps
 `include "mult.v"
-/*
-module mult_test();
 
-    reg signed [3:0]a,b;    
-    wire signed [7:0]out;
-    
-    
-
-    // module signed_mult (input[7:0]a,b, output[15:0]out);
-    signed_mult_4bit s1(a,b,out);
-    
-
-    initial begin
-        $dumpfile("dump.vcd");
-        $dumpvars(0, mult_test);
-    end
-
-    initial begin
-
-        $monitor("%d * %d = %d",a,b,out);
-
-        a = 4'b0101;
-        b = 4'b0010;
-        #10;
-        
-        
-            
-
-
-    end
-endmodule */
-
-module comp_test();
-
-    reg signed [3:0] a;
-    wire signed [3:0] b;
+module tb;
+  reg clk,reset, START,LSB,DONE;
+  reg signed [7:0] A_in,B_in;
+  wire [15:0] RC;
+  wire STOP,LOAD_cmd,ADD_cmd,SHIFT_cmd,COUNT;
+  initial begin $dumpfile("dump.vcd"); $dumpvars(0,tb); end
+  initial begin reset = 1'b1; #12.5 reset = 1'b0; end
+  initial clk = 1'b0; always #5 clk =~ clk;
 
     
-    
 
-    // module twosComp4(input[3:0]in,output[3:0]out);
-    twosComp4 a1(a,b);
+  controlUnit test1(clk,reset, START,LSB,DONE,STOP,LOAD_cmd,ADD_cmd,SHIFT_cmd,COUNT);
 
-    initial begin
-        $dumpfile("dump.vcd");
-        $dumpvars(0, comp_test);
-    end
-
-    initial begin
-
-        $monitor("%d => %d",a,b);
-
-        a = 4'b1101;
-        #10;
-        
-        
-            
+initial begin
+    $monitor(START,LSB);
+    #100
+    START = 1'b1; #30 START = 1'b0;
+    #100
+    LSB = 1'b1; #30 LSB = 1'b0;
 
 
-    end
+    #1000
+    $display("%d * %d = %d",A_in,B_in,RC);
+    $finish;
+
+end
+
 
 endmodule
-
-
-    

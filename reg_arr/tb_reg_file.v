@@ -1,13 +1,11 @@
 `timescale 1 ns / 100 ps
-`define TESTVECS 6
-`include "register.v"
+`define TESTVECS 4
+`include "mult.v"
+
 
 module tb;
-  reg clk, reset, wr;
-  reg [2:0] rd_addr_a, rd_addr_b, wr_addr; reg [15:0] d_in;
-  wire [15:0] d_out_a, d_out_b;
-  reg [25:0] test_vecs [0:(`TESTVECS-1)];
-  integer i;
+    
+
   initial begin $dumpfile("tb_reg_file.vcd"); $dumpvars(0,tb); end
   initial begin reset = 1'b1; #12.5 reset = 1'b0; end
   initial clk = 1'b0; always #5 clk =~ clk;
@@ -34,5 +32,8 @@ module tb;
     #100 $finish;
   end
 endmodule
+
+
+
 
 

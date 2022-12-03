@@ -1,234 +1,122 @@
 $date
-	Thu Oct 27 15:28:10 2022
+	Tue Nov 29 11:12:50 2022
 $end
 $version
 	Icarus Verilog
 $end
 $timescale
-	1s
+	100ps
 $end
-$scope module comp_test $end
-$var wire 4 ! b [3:0] $end
-$var reg 4 " a [3:0] $end
-$scope module a1 $end
-$var wire 4 # in [3:0] $end
-$var wire 4 $ out [3:0] $end
-$var wire 4 % ones [3:0] $end
-$var wire 1 & carry $end
-$scope module f1 $end
-$var wire 4 ' a [3:0] $end
-$var wire 4 ( b [3:0] $end
-$var wire 1 ) cin $end
-$var wire 4 * sum [3:0] $end
-$var wire 1 & cout $end
-$scope module f1 $end
-$var wire 1 + a $end
-$var wire 1 , b $end
-$var wire 1 - sum1 $end
-$var wire 1 . sum $end
-$var wire 1 / carry2 $end
-$var wire 1 0 carry1 $end
-$var wire 1 1 carry $end
-$var wire 1 2 cIn $end
-$scope module a1 $end
-$var wire 1 + a $end
-$var wire 1 , b $end
-$var wire 1 - s $end
-$var wire 1 0 c $end
-$scope module carry1 $end
-$var wire 1 + a $end
-$var wire 1 , b $end
-$var wire 1 0 y $end
+$scope module tb $end
+$var wire 1 ! ADD_cmd $end
+$var wire 16 " RC [15:0] $end
+$var wire 1 # STOP $end
+$var wire 1 $ SHIFT_cmd $end
+$var wire 1 % LOAD_cmd $end
+$var wire 1 & COUNT $end
+$var reg 8 ' A_in [7:0] $end
+$var reg 8 ( B_in [7:0] $end
+$var reg 1 ) DONE $end
+$var reg 1 * LSB $end
+$var reg 1 + START $end
+$var reg 1 , clk $end
+$var reg 1 - reset $end
+$scope module test1 $end
+$var wire 1 ! ADD_cmd $end
+$var wire 1 & COUNT $end
+$var wire 1 ) DONE $end
+$var wire 1 % LOAD_cmd $end
+$var wire 1 * LSB $end
+$var wire 1 $ SHIFT_cmd $end
+$var wire 1 + START $end
+$var wire 1 # STOP $end
+$var wire 1 . a_next $end
+$var wire 1 / an $end
+$var wire 1 0 b_next $end
+$var wire 1 1 bn $end
+$var wire 1 2 c_next $end
+$var wire 1 , clk $end
+$var wire 1 3 cn $end
+$var wire 1 4 d $end
+$var wire 1 5 dn $end
+$var wire 1 6 ln $end
+$var wire 1 - reset $end
+$var wire 1 7 rn $end
+$var wire 1 8 sn $end
+$var wire 2 9 c_sop [1:0] $end
+$var wire 1 : c $end
+$var wire 3 ; b_sop [2:0] $end
+$var wire 1 < b $end
+$var wire 3 = a_sop [2:0] $end
+$var wire 1 > a $end
+$scope module da $end
+$var wire 1 , clk $end
+$var wire 1 . in $end
+$var wire 1 - reset $end
+$var wire 1 ? reset_ $end
+$var wire 1 > out $end
+$var wire 1 @ df_in $end
+$scope module and2_0 $end
+$var wire 1 . i0 $end
+$var wire 1 @ o $end
+$var wire 1 ? i1 $end
 $upscope $end
-$scope module sum1 $end
-$var wire 1 + a $end
-$var wire 1 , b $end
-$var wire 1 - y $end
+$scope module df_0 $end
+$var wire 1 , clk $end
+$var wire 1 @ in $end
+$var wire 1 > out $end
+$var reg 1 > df_out $end
 $upscope $end
-$upscope $end
-$scope module a2 $end
-$var wire 1 - a $end
-$var wire 1 . s $end
-$var wire 1 / c $end
-$var wire 1 2 b $end
-$scope module carry1 $end
-$var wire 1 - a $end
-$var wire 1 / y $end
-$var wire 1 2 b $end
-$upscope $end
-$scope module sum1 $end
-$var wire 1 - a $end
-$var wire 1 . y $end
-$var wire 1 2 b $end
-$upscope $end
-$upscope $end
-$scope module suma1a2 $end
-$var wire 1 0 a $end
-$var wire 1 / b $end
-$var wire 1 1 y $end
-$upscope $end
-$upscope $end
-$scope module f2 $end
-$var wire 1 3 a $end
-$var wire 1 4 b $end
-$var wire 1 1 cIn $end
-$var wire 1 5 sum1 $end
-$var wire 1 6 sum $end
-$var wire 1 7 carry2 $end
-$var wire 1 8 carry1 $end
-$var wire 1 9 carry $end
-$scope module a1 $end
-$var wire 1 3 a $end
-$var wire 1 4 b $end
-$var wire 1 5 s $end
-$var wire 1 8 c $end
-$scope module carry1 $end
-$var wire 1 3 a $end
-$var wire 1 4 b $end
-$var wire 1 8 y $end
-$upscope $end
-$scope module sum1 $end
-$var wire 1 3 a $end
-$var wire 1 4 b $end
-$var wire 1 5 y $end
+$scope module invert_0 $end
+$var wire 1 - i $end
+$var wire 1 ? o $end
 $upscope $end
 $upscope $end
-$scope module a2 $end
-$var wire 1 5 a $end
-$var wire 1 1 b $end
-$var wire 1 6 s $end
-$var wire 1 7 c $end
-$scope module carry1 $end
-$var wire 1 5 a $end
-$var wire 1 1 b $end
-$var wire 1 7 y $end
+$scope module db $end
+$var wire 1 , clk $end
+$var wire 1 0 in $end
+$var wire 1 - reset $end
+$var wire 1 A reset_ $end
+$var wire 1 < out $end
+$var wire 1 B df_in $end
+$scope module and2_0 $end
+$var wire 1 0 i0 $end
+$var wire 1 B o $end
+$var wire 1 A i1 $end
 $upscope $end
-$scope module sum1 $end
-$var wire 1 5 a $end
-$var wire 1 1 b $end
-$var wire 1 6 y $end
+$scope module df_0 $end
+$var wire 1 , clk $end
+$var wire 1 B in $end
+$var wire 1 < out $end
+$var reg 1 < df_out $end
 $upscope $end
-$upscope $end
-$scope module suma1a2 $end
-$var wire 1 8 a $end
-$var wire 1 7 b $end
-$var wire 1 9 y $end
-$upscope $end
-$upscope $end
-$scope module f3 $end
-$var wire 1 : a $end
-$var wire 1 ; b $end
-$var wire 1 9 cIn $end
-$var wire 1 < sum1 $end
-$var wire 1 = sum $end
-$var wire 1 > carry2 $end
-$var wire 1 ? carry1 $end
-$var wire 1 & carry $end
-$scope module a1 $end
-$var wire 1 : a $end
-$var wire 1 ; b $end
-$var wire 1 < s $end
-$var wire 1 ? c $end
-$scope module carry1 $end
-$var wire 1 : a $end
-$var wire 1 ; b $end
-$var wire 1 ? y $end
-$upscope $end
-$scope module sum1 $end
-$var wire 1 : a $end
-$var wire 1 ; b $end
-$var wire 1 < y $end
+$scope module invert_0 $end
+$var wire 1 - i $end
+$var wire 1 A o $end
 $upscope $end
 $upscope $end
-$scope module a2 $end
-$var wire 1 < a $end
-$var wire 1 9 b $end
-$var wire 1 = s $end
-$var wire 1 > c $end
-$scope module carry1 $end
-$var wire 1 < a $end
-$var wire 1 9 b $end
-$var wire 1 > y $end
+$scope module dc $end
+$var wire 1 , clk $end
+$var wire 1 2 in $end
+$var wire 1 - reset $end
+$var wire 1 C reset_ $end
+$var wire 1 : out $end
+$var wire 1 D df_in $end
+$scope module and2_0 $end
+$var wire 1 2 i0 $end
+$var wire 1 D o $end
+$var wire 1 C i1 $end
 $upscope $end
-$scope module sum1 $end
-$var wire 1 < a $end
-$var wire 1 9 b $end
-$var wire 1 = y $end
+$scope module df_0 $end
+$var wire 1 , clk $end
+$var wire 1 D in $end
+$var wire 1 : out $end
+$var reg 1 : df_out $end
 $upscope $end
+$scope module invert_0 $end
+$var wire 1 - i $end
+$var wire 1 C o $end
 $upscope $end
-$scope module suma1a2 $end
-$var wire 1 ? a $end
-$var wire 1 > b $end
-$var wire 1 & y $end
-$upscope $end
-$upscope $end
-$scope module h0 $end
-$var wire 1 @ a $end
-$var wire 1 A b $end
-$var wire 1 ) cIn $end
-$var wire 1 B sum1 $end
-$var wire 1 C sum $end
-$var wire 1 D carry2 $end
-$var wire 1 E carry1 $end
-$var wire 1 2 carry $end
-$scope module a1 $end
-$var wire 1 @ a $end
-$var wire 1 A b $end
-$var wire 1 B s $end
-$var wire 1 E c $end
-$scope module carry1 $end
-$var wire 1 @ a $end
-$var wire 1 A b $end
-$var wire 1 E y $end
-$upscope $end
-$scope module sum1 $end
-$var wire 1 @ a $end
-$var wire 1 A b $end
-$var wire 1 B y $end
-$upscope $end
-$upscope $end
-$scope module a2 $end
-$var wire 1 B a $end
-$var wire 1 ) b $end
-$var wire 1 C s $end
-$var wire 1 D c $end
-$scope module carry1 $end
-$var wire 1 B a $end
-$var wire 1 ) b $end
-$var wire 1 D y $end
-$upscope $end
-$scope module sum1 $end
-$var wire 1 B a $end
-$var wire 1 ) b $end
-$var wire 1 C y $end
-$upscope $end
-$upscope $end
-$scope module suma1a2 $end
-$var wire 1 E a $end
-$var wire 1 D b $end
-$var wire 1 2 y $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope module x0 $end
-$var wire 1 F i0 $end
-$var wire 1 G i1 $end
-$var wire 1 H o $end
-$upscope $end
-$scope module x1 $end
-$var wire 1 I i0 $end
-$var wire 1 J i1 $end
-$var wire 1 K o $end
-$upscope $end
-$scope module x2 $end
-$var wire 1 L i0 $end
-$var wire 1 M i1 $end
-$var wire 1 N o $end
-$upscope $end
-$scope module x3 $end
-$var wire 1 O i0 $end
-$var wire 1 P i1 $end
-$var wire 1 Q o $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -238,54 +126,582 @@ $dumpall
 $end
 #0
 $dumpvars
-0Q
-1P
-1O
-0N
-1M
-1L
-1K
-1J
-0I
-0H
-1G
-1F
-0E
 0D
-1C
+0C
 0B
 0A
 0@
 0?
-0>
-0=
-0<
-0;
-0:
-09
-08
+x>
+bx =
+x<
+bx ;
+x:
+bx 9
+x8
 07
-06
-05
-04
-03
-02
-01
-00
-0/
-1.
+x6
+x5
+z4
+x3
+x2
+x1
+x0
+x/
+x.
 1-
 0,
-1+
-b11 *
-1)
-b0 (
-b10 '
-0&
-b10 %
-b11 $
-b1101 #
-b1101 "
-b11 !
+x+
+x*
+x)
+bx (
+bx '
+x&
+x%
+x$
+0#
+bz "
+z!
 $end
-#10
+#50
+02
+00
+0&
+0$
+1/
+bx00 =
+11
+0%
+b0 9
+b0 ;
+13
+0>
+0<
+0:
+1,
+#100
+0,
+#125
+1#
+17
+x@
+1?
+1A
+1C
+0-
+#150
+xB
+x0
+x#
+x&
+x$
+b0x0 ;
+x/
+x>
+1,
+#200
+0,
+#250
+xD
+x2
+b0x 9
+bx0 ;
+bx =
+x1
+x<
+1,
+#300
+0,
+#350
+x%
+bx 9
+bx ;
+x3
+x:
+1,
+#400
+0,
+#450
+1,
+#500
+0,
+#550
+1,
+#600
+0,
+#650
+1,
+#700
+0,
+#750
+1,
+#800
+0,
+#850
+1,
+#900
+0,
+#950
+1,
+#1000
+08
+0,
+1+
+#1050
+1,
+#1100
+18
+0,
+0+
+#1150
+1,
+#1200
+0,
+#1250
+1,
+#1300
+0,
+#1350
+1,
+#1400
+0,
+#1450
+1,
+#1500
+0,
+#1550
+1,
+#1600
+0,
+#1650
+1,
+#1700
+0,
+#1750
+1,
+#1800
+0,
+#1850
+1,
+#1900
+0,
+#1950
+1,
+#2000
+0,
+#2050
+1,
+#2100
+bx0 9
+06
+0,
+1*
+#2150
+1,
+#2200
+bx 9
+16
+bx00 =
+b0xx ;
+0,
+0*
+#2250
+1,
+#2300
+0,
+#2350
+1,
+#2400
+0,
+#2450
+1,
+#2500
+0,
+#2550
+1,
+#2600
+0,
+#2650
+1,
+#2700
+0,
+#2750
+1,
+#2800
+0,
+#2850
+1,
+#2900
+0,
+#2950
+1,
+#3000
+0,
+#3050
+1,
+#3100
+0,
+#3150
+1,
+#3200
+0,
+#3250
+1,
+#3300
+0,
+#3350
+1,
+#3400
+0,
+#3450
+1,
+#3500
+0,
+#3550
+1,
+#3600
+0,
+#3650
+1,
+#3700
+0,
+#3750
+1,
+#3800
+0,
+#3850
+1,
+#3900
+0,
+#3950
+1,
+#4000
+0,
+#4050
+1,
+#4100
+0,
+#4150
+1,
+#4200
+0,
+#4250
+1,
+#4300
+0,
+#4350
+1,
+#4400
+0,
+#4450
+1,
+#4500
+0,
+#4550
+1,
+#4600
+0,
+#4650
+1,
+#4700
+0,
+#4750
+1,
+#4800
+0,
+#4850
+1,
+#4900
+0,
+#4950
+1,
+#5000
+0,
+#5050
+1,
+#5100
+0,
+#5150
+1,
+#5200
+0,
+#5250
+1,
+#5300
+0,
+#5350
+1,
+#5400
+0,
+#5450
+1,
+#5500
+0,
+#5550
+1,
+#5600
+0,
+#5650
+1,
+#5700
+0,
+#5750
+1,
+#5800
+0,
+#5850
+1,
+#5900
+0,
+#5950
+1,
+#6000
+0,
+#6050
+1,
+#6100
+0,
+#6150
+1,
+#6200
+0,
+#6250
+1,
+#6300
+0,
+#6350
+1,
+#6400
+0,
+#6450
+1,
+#6500
+0,
+#6550
+1,
+#6600
+0,
+#6650
+1,
+#6700
+0,
+#6750
+1,
+#6800
+0,
+#6850
+1,
+#6900
+0,
+#6950
+1,
+#7000
+0,
+#7050
+1,
+#7100
+0,
+#7150
+1,
+#7200
+0,
+#7250
+1,
+#7300
+0,
+#7350
+1,
+#7400
+0,
+#7450
+1,
+#7500
+0,
+#7550
+1,
+#7600
+0,
+#7650
+1,
+#7700
+0,
+#7750
+1,
+#7800
+0,
+#7850
+1,
+#7900
+0,
+#7950
+1,
+#8000
+0,
+#8050
+1,
+#8100
+0,
+#8150
+1,
+#8200
+0,
+#8250
+1,
+#8300
+0,
+#8350
+1,
+#8400
+0,
+#8450
+1,
+#8500
+0,
+#8550
+1,
+#8600
+0,
+#8650
+1,
+#8700
+0,
+#8750
+1,
+#8800
+0,
+#8850
+1,
+#8900
+0,
+#8950
+1,
+#9000
+0,
+#9050
+1,
+#9100
+0,
+#9150
+1,
+#9200
+0,
+#9250
+1,
+#9300
+0,
+#9350
+1,
+#9400
+0,
+#9450
+1,
+#9500
+0,
+#9550
+1,
+#9600
+0,
+#9650
+1,
+#9700
+0,
+#9750
+1,
+#9800
+0,
+#9850
+1,
+#9900
+0,
+#9950
+1,
+#10000
+0,
+#10050
+1,
+#10100
+0,
+#10150
+1,
+#10200
+0,
+#10250
+1,
+#10300
+0,
+#10350
+1,
+#10400
+0,
+#10450
+1,
+#10500
+0,
+#10550
+1,
+#10600
+0,
+#10650
+1,
+#10700
+0,
+#10750
+1,
+#10800
+0,
+#10850
+1,
+#10900
+0,
+#10950
+1,
+#11000
+0,
+#11050
+1,
+#11100
+0,
+#11150
+1,
+#11200
+0,
+#11250
+1,
+#11300
+0,
+#11350
+1,
+#11400
+0,
+#11450
+1,
+#11500
+0,
+#11550
+1,
+#11600
+0,
+#11650
+1,
+#11700
+0,
+#11750
+1,
+#11800
+0,
+#11850
+1,
+#11900
+0,
+#11950
+1,
+#12000
+0,
+#12050
+1,
+#12100
+0,
+#12150
+1,
+#12200
+0,
